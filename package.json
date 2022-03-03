@@ -1,0 +1,23 @@
+{
+  "name": "data-cruncher",
+  "version": "1.0.0",
+  "description": "Take-home exercise",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csmiceli/data-cruncher.git"
+  },
+  "author": "Chris Miceli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csmiceli/data-cruncher/issues"
+  },
+  "homepage": "https://github.com/csmiceli/data-cruncher#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "express": "^4.17.3"
+  }
+}
