@@ -9,7 +9,14 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // router
-app.get("/", (req, res) => ctrl.processData());
+app.get("/", async (req, res) => { 
+    try {
+        let json = await ctrl.processData(req.query.name);
+        res.json(json);
+    } catch (e) {
+        res.json(e);
+    }    
+});
 
 app.listen(port, () => {
     console.log("Data Cruncher ready");

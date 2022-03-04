@@ -9,9 +9,12 @@ class FileParser {
 
     // Parse data file
     parseTxt() {
+        if (!fs.existsSync(this.txt)) throw new Error("File does not exist");
+
         let fileText = fs.readFileSync(this.txt, "UTF8").split("\r\n");
         let schema = this.#parseCsv();
         let blobs = [];        
+      
 
         for (let row of fileText) {
             let blob = {};
