@@ -1,6 +1,7 @@
 'use strict';
 const fs = require("fs");
 
+// Parse files
 class FileParser {
     constructor(name) {
         this.txt = `./data/${name}.txt`;
